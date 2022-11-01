@@ -1,4 +1,3 @@
-#tive ajuda de um colega pois estava com muita dificuldade#
 from funcoes import continuar, exibirPalavera, vitoria, derrota, limparTela
 
 dicas = list
