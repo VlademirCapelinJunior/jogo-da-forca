@@ -43,11 +43,11 @@ def main():
 
         if chute in palavraChave:
             acertos += 1
-            mensagem = "{} esta na palavra chave".format(chute.upper())
+            mensagem = ((chute, " esta na palavra chave")
         else:
             erros -= 1
             derrota += 1
-            mensagem = "{} está incorreta!".format(chute.upper())
+            mensagem = ((chute), " está incorreta!")
         print("\n")
     inicio()
     limparTela()    
@@ -58,9 +58,9 @@ def main():
         limparTela();
 
         palavraChave = list(input("Digite a palavraChave :").upper());            
-        dicas.append (str(input("Dica 1:").upper()));
-        dicas.append (str(input("Dica 2:").upper()));
-        dicas.append (str(input("Dica 3:").upper()));
+        dicas.append (str(input("Dica 1:")));
+        dicas.append (str(input("Dica 2:")));
+        dicas.append (str(input("Dica 3:")));
 
         limparTela()
         while acertos < len(palavraChave) and erros > 0:
